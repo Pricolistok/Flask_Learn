@@ -16,6 +16,9 @@ class Users(Base):
     surname = Column(String)
     patronymic = Column(String)
     date_of_birth = Column(DateTime)
+    about = Column(String)
+    doctor = Column(String)
+    # test_alembic = Column(Integer)
     users_disease = relationship('Disease')
 
 

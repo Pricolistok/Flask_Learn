@@ -4,7 +4,7 @@ from models import Base, Users, Disease
 from datetime import datetime
 
 
-engine = create_engine('sqlite:///Policlinic.db', echo=True)
+engine = create_engine('sqlite:///../Policlinic.db', echo=True)
 Base.metadata.create_all(engine)
 sessionmaker = sessionmaker(bind=engine)
 with sessionmaker.begin() as s:
@@ -13,6 +13,9 @@ with sessionmaker.begin() as s:
                  name = 'Brainin',
                  surname = 'Belcovichjk',
                  patronymic = 'Clifkl',
+                 about = '12345678ikjhgtyu',
+                 doctor = 'tor',
+                 # test_alembic = 12,
                  date_of_birth = datetime.now())
     disease = Disease(disease = 'alergicalllll')
     user.users_disease.append(disease)
