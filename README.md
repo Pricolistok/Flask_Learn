@@ -1,1 +1,1 @@
-# This project was created to study Flask
+# Данный репозиторий был создан для изучения Flask
